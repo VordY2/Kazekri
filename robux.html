@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Калькулятор Robux | Kazekri Market</title>
+    <meta
+      name="description"
+      content="Калькулятор заказа Robux через gamepass: выбери количество, укажи Roblox логин и перейди к покупке."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Kazekri Market, на главную">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Kazekri Market</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="robux.html">Калькулятор</a>
+        <a href="index.html#process">Как купить</a>
+        <a href="index.html#trust">Гарантии</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a class="nav-cta" href="contacts.html">Связаться</a>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Калькулятор Robux</p>
+        <h1>Выбери количество и укажи логин.</h1>
+        <p>После расчета можно перейти к покупке. Укажи количество Robux и Roblox логин, чтобы быстро подготовить заказ.</p>
+      </section>
+
+      <section class="order-section order-page" id="order" aria-labelledby="order-title">
+        <div class="order-copy">
+          <p class="eyebrow">Gamepass</p>
+          <h2 id="order-title">Расчет заказа</h2>
+          <p>
+            Перед покупкой проверь количество Robux и логин Roblox. Итоговую сумму можно подтвердить перед выполнением заказа.
+          </p>
+        </div>
+        <div class="order-card" aria-label="Калькулятор заказа Robux">
+          <div class="range-head">
+            <label for="robuxRange">Количество Robux</label>
+            <strong id="rangeValue">1000</strong>
+          </div>
+          <div class="range-shell">
+            <input id="robuxRange" type="range" min="100" max="10000" step="100" value="1000">
+          </div>
+          <div class="order-row">
+            <label for="robuxAmount">Robux</label>
+            <input id="robuxAmount" type="number" min="100" max="10000" step="100" value="1000">
+          </div>
+          <div class="order-row">
+            <label for="robloxLogin">Roblox логин</label>
+            <input id="robloxLogin" type="text" placeholder="Например: KazekriRoblox" autocomplete="username">
+          </div>
+          <div class="price-box">
+            <span>Итоговая цена</span>
+            <strong id="orderPrice">250 ₽</strong>
+            <small>Расчет примерный. Точную сумму можно подтвердить в заказе.</small>
+          </div>
+          <a class="button button-primary order-link" id="buyOrderLink" href="contacts.html">
+            Купить
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Kazekri Market</span>
+      <a href="contacts.html">Telegram @kazekri</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
